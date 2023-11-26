@@ -1,8 +1,6 @@
-
-# Nadav Finteka Mission 
+# Nadav Finteka Mission
 
 A brief description of what this project does and who it's for
-
 
 ## Features
 
@@ -11,18 +9,28 @@ A brief description of what this project does and who it's for
 - getUser
 - updateFirstName
 
-
 ## To use postman
 
 import finteka.postman_collection.json
 
-
 Each folder represents a lambda function
 
 Steps:
- run registeration
- run login
- After login copy the token paste it in Authorization section
- select type: Bearer Token and paste the token
- run getUser
- run updateFirstName
+run registeration
+run login
+After login copy the token paste it in Authorization section
+select type: Bearer Token and paste the token
+run getUser
+run updateFirstName
+
+To run locally you should configure aws-credentials and the code after importing AWS
+
+```javascript
+import AWS from "aws-sdk";
+const directoryPath = process.cwd();
+AWS.config.loadFromPath(`${directoryPath}\\aws-credentials.json`);
+```
+
+## Improvements
+
+make ci/cd pipeline from github to s3 and redploy lambda functions
