@@ -66,7 +66,7 @@ async function saveToDynamoDB(userData) {
 async function registerUserInCognito(userData) {
   const params = {
     ClientId: settings.clientId,
-    Username: userData.phoneNumber, // Assuming the user's ID can be used as the username
+    Username: userData.phoneNumber, // Assuming the phoneNumber can be used as the username
     Password: userData.password,
     UserAttributes: [
       { Name: "given_name", Value: userData.firstName },
