@@ -4,11 +4,6 @@ import * as Axios from "axios";
 import jsonwebtoken from "jsonwebtoken";
 import { settings } from "./settings.mjs";
 import jwkToPem from "jwk-to-pem";
-const directoryPath = process.cwd();
-// AWS.config.loadFromPath(`${directoryPath}\\aws-credentials.json`);
-
-// AWS.config.update({ region: "us-east-1" });
-
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
 const cognitoPoolId = settings.cognitoPoolId;

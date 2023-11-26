@@ -1,5 +1,12 @@
 import { handler } from "./index.mjs";
 
 (async () => {
-  await handler({});
+  await handler({
+    headers: {
+      authorization: "sds" + " " + "<token>",
+    },
+    body: {
+      firstName: "sadad",
+    },
+  });
 })();

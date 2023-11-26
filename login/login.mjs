@@ -1,10 +1,7 @@
 import AWS from "aws-sdk";
 import { settings } from "./settings.mjs";
-// const directoryPath = process.cwd();
-// AWS.config.loadFromPath(`${directoryPath}\\aws-credentials.json`);
 AWS.config.update({ region: "us-east-1" });
 
-const dynamoDB = new AWS.DynamoDB.DocumentClient();
 const cognitoIdentityServiceProvider = new AWS.CognitoIdentityServiceProvider();
 
 export const login = async ({ username, password }) => {
