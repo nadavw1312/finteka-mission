@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "0c53cb3b-5426-4027-a310-91ed7bd206e3",
+		"name": "finteka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28879776"
+	},
+	"item": [
+		{
+			"name": "registeration",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"bdika\",\r\n    \"lastName\": \"bdika\",\r\n    \"israeliId\": \"999999999\",\r\n    \"phoneNumber\": \"+9720544598211\",\r\n    \"password\": \"12345678aA@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://yynztocsh5yf4m6pgobdx73jdm0mqori.lambda-url.us-east-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"yynztocsh5yf4m6pgobdx73jdm0mqori",
+						"lambda-url",
+						"us-east-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"+9720544598211\",\r\n    \"password\": \"12345678aA@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gjdboqs6iaf2ytg3shfjcfruxm0ulghf.lambda-url.us-east-1.on.aws/ ",
+					"protocol": "https",
+					"host": [
+						"gjdboqs6iaf2ytg3shfjcfruxm0ulghf",
+						"lambda-url",
+						"us-east-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJHQkF3aHJnWGVrSjdQNUlsSUdFc2pMN2w4UlVzdnNRMzhKWUhtNGs1SmY4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlZTlkOTY5Mi1hNjQ0LTQ4N2UtOWUzMi1hZDk4NGRkZDc1MzIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV80T1Fza244STEiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOnRydWUsImNvZ25pdG86dXNlcm5hbWUiOiJlZTlkOTY5Mi1hNjQ0LTQ4N2UtOWUzMi1hZDk4NGRkZDc1MzIiLCJnaXZlbl9uYW1lIjoiYmRpa2EiLCJvcmlnaW5fanRpIjoiYWMwNWQ0ZWMtMmE0OC00ODVjLWJlNTItNDg0MGVjMjliMjI1IiwiYXVkIjoiM3Q1bXBrNTlpbXVsZ2F0bXNhdnEzMHRuaW0iLCJldmVudF9pZCI6IjMxMTQyMGIxLTY2OGYtNDgwNy04NzhkLWQwN2Y5MTRhMjk3MCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzAxMDE3NzMwLCJwaG9uZV9udW1iZXIiOiIrOTcyMDU0NDU5ODIxMSIsImV4cCI6MTcwMTAyMTMzMCwiaWF0IjoxNzAxMDE3NzMwLCJmYW1pbHlfbmFtZSI6ImJkaWthIiwianRpIjoiYjJjZTc1OTgtYjAyZC00YjQyLTg2MDctMGY5NWFmMGIwZWZjIn0.wr_f1urWB7tNTW1NLrYp6BnIw3AV20DqfFPNKsi5Q18ZDb8CQNKMj0uV_qTEkoznu8EMxt5gzkj01UasNukkNU8vqxaFZq04Pf_1_WDouqCR4g5QLHhVPQRkygGtfsllKYb5B2G2Vg3ivt4ziUAR1omaAg70qAR-Qce2kjTNmbRto0F9RJ8az4JZTOeiMA39kCqcUl7p48P1uxQmgOugOa2DqhGONwgGX4oVw38JipL_l8BDbsf76qKCKZ1lbx1fwL4u56RYWgNt1Yvi5B__XnbDhetacLB5zM66v7aCLQvclYq5Z3R_qrXWQrg8_DEDMCnvQ1TSe3apXtI7-raStQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJraWQiOiJHQkF3aHJnWGVrSjdQNUlsSUdFc2pMN2w4UlVzdnNRMzhKWUhtNGs1SmY4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJhZWQ4ZGM5ZS05ZTNiLTQxODktYjZkNy1lZGViNmMzZDkyZWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV80T1Fza244STEiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOnRydWUsImNvZ25pdG86dXNlcm5hbWUiOiJhZWQ4ZGM5ZS05ZTNiLTQxODktYjZkNy1lZGViNmMzZDkyZWUiLCJnaXZlbl9uYW1lIjoiYmRpa2EiLCJvcmlnaW5fanRpIjoiM2EyYjA5NGYtYTY4OS00NjViLTllZjYtZDNlODllMGU2ZDY5IiwiYXVkIjoiM3Q1bXBrNTlpbXVsZ2F0bXNhdnEzMHRuaW0iLCJldmVudF9pZCI6ImUyYWRlYTRkLTVlMWItNDA0Yy1iNDZlLWRiMGQ0MjNiMmFkNCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzAxMDExMTc0LCJwaG9uZV9udW1iZXIiOiIrOTcyMDU0NDU5ODI2NCIsImV4cCI6MTcwMTAxNDc3NCwiaWF0IjoxNzAxMDExMTc0LCJmYW1pbHlfbmFtZSI6ImJkaWthIiwianRpIjoiNWQyMmZiZGEtZTBlNC00YzlmLWEyM2EtMmQwNmEwYjM2N2RiIn0.iHB-k1cbxcGlBbBic97wZpDAwKz4-qgEoQEp1fCqBd3P4BuDNTjT20vW34jpPkLg6banljIbfoYe8Dn-WwnM6qmta3Uo17awgtsLke-loNh5KgaE_bsr7mhQ45cWlHyTxvz7SLw24LhxdMeAU0E6HBntwolx7K5hMlqXuS1qrhAnW6jLLCw9YZlROj4nW_Ix4gZcs1utPJO0jg1MRpmrGQImuLt8G0tT4qrYModX26yrlnWzh8wr83tJV9So8577udwraS36BLTOIlg-yEuljt4LCDs1S7yVY8Q5hSNgnoYxQYkeFBMaMeUgAT_NwDxcadYgK4uiiytDIuF6XBsZmw",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://cgmq5xycb4d2py5vpfndzitnxq0qzyma.lambda-url.us-east-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"cgmq5xycb4d2py5vpfndzitnxq0qzyma",
+						"lambda-url",
+						"us-east-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFirstName",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJHQkF3aHJnWGVrSjdQNUlsSUdFc2pMN2w4UlVzdnNRMzhKWUhtNGs1SmY4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJlZTlkOTY5Mi1hNjQ0LTQ4N2UtOWUzMi1hZDk4NGRkZDc1MzIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV80T1Fza244STEiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOnRydWUsImNvZ25pdG86dXNlcm5hbWUiOiJlZTlkOTY5Mi1hNjQ0LTQ4N2UtOWUzMi1hZDk4NGRkZDc1MzIiLCJnaXZlbl9uYW1lIjoiYmRpa2EiLCJvcmlnaW5fanRpIjoiYWMwNWQ0ZWMtMmE0OC00ODVjLWJlNTItNDg0MGVjMjliMjI1IiwiYXVkIjoiM3Q1bXBrNTlpbXVsZ2F0bXNhdnEzMHRuaW0iLCJldmVudF9pZCI6IjMxMTQyMGIxLTY2OGYtNDgwNy04NzhkLWQwN2Y5MTRhMjk3MCIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzAxMDE3NzMwLCJwaG9uZV9udW1iZXIiOiIrOTcyMDU0NDU5ODIxMSIsImV4cCI6MTcwMTAyMTMzMCwiaWF0IjoxNzAxMDE3NzMwLCJmYW1pbHlfbmFtZSI6ImJkaWthIiwianRpIjoiYjJjZTc1OTgtYjAyZC00YjQyLTg2MDctMGY5NWFmMGIwZWZjIn0.wr_f1urWB7tNTW1NLrYp6BnIw3AV20DqfFPNKsi5Q18ZDb8CQNKMj0uV_qTEkoznu8EMxt5gzkj01UasNukkNU8vqxaFZq04Pf_1_WDouqCR4g5QLHhVPQRkygGtfsllKYb5B2G2Vg3ivt4ziUAR1omaAg70qAR-Qce2kjTNmbRto0F9RJ8az4JZTOeiMA39kCqcUl7p48P1uxQmgOugOa2DqhGONwgGX4oVw38JipL_l8BDbsf76qKCKZ1lbx1fwL4u56RYWgNt1Yvi5B__XnbDhetacLB5zM66v7aCLQvclYq5Z3R_qrXWQrg8_DEDMCnvQ1TSe3apXtI7-raStQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"working1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bxtwu54pgdgl2g5izzda2st5eu0tszeh.lambda-url.us-east-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"bxtwu54pgdgl2g5izzda2st5eu0tszeh",
+						"lambda-url",
+						"us-east-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

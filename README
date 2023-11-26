@@ -1,0 +1,28 @@
+
+# Nadav Finteka Mission 
+
+A brief description of what this project does and who it's for
+
+
+## Features
+
+- registeration
+- login
+- getUser
+- updateFirstName
+
+
+## To use postman
+
+import finteka.postman_collection.json
+
+
+Each folder represents a lambda function
+
+Steps:
+ run registeration
+ run login
+ After login copy the token paste it in Authorization section
+ select type: Bearer Token and paste the token
+ run getUser
+ run updateFirstName
